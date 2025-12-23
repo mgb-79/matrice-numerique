@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "struct.h"
 #include "alloc.h"
+#include "matrix.h"
 
 matrix *create_matrix_blank(int dimension)
 {
@@ -26,4 +27,14 @@ void print_matrix(matrix *m)
         }
         printf("|\n");
     }
+}
+
+char get_cell_matrix(matrix *m, int i, int j)
+{
+    return m->mat[i][j];
+}
+
+void set_cell_matrix(matrix *m, int i, int j, char c)
+{
+    m->mat[i][j] = c;
 }
