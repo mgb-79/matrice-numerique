@@ -1,3 +1,9 @@
 # matrice-numerique
 
-type make to compile. make clean to uncompile.
+To compile, type :
+- mkdir build
+- cd build
+- cmake ..
+- make
+
+to uncompile, type make clean.
