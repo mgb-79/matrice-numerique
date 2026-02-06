@@ -26,36 +26,27 @@ void print_matrix(matrix *m) {
   }
 }
 
-void fill_matrix(matrix *m, unsigned char r, unsigned char g, unsigned char b) {
+void fill_matrix(matrix *m, pixel *p) {
   for (int i = 0; i < m->dimension; i++) {
     for (int j = 0; j < m->dimension; j++) {
-      m->data[i][j].r = r;
-      m->data[i][j].g = g;
-      m->data[i][j].b = b;
+      m->data[i][j].r = p->r;
+      m->data[i][j].g = p->g;
+      m->data[i][j].b = p->b;
     }
   }
 }
-char get_cell_matrix(matrix *m, int i, int j, char color) {
-  if (color == 'r')
-    return m->data[i][j].r;
-  else if (color == 'g')
-    return m->data[i][j].g;
-  else if (color == 'b')
-    return m->data[i][j].b;
-  else
-    printf("wrong color!\n");
-  return -1;
+pixel *get_cell_matrix(matrix *m, int i, int j) {
+  pixel *p = new_pixel();
+  p->r = m->data[i][j].r;
+  p->g = m->data[i][j].g;
+  p->b = m->data[i][j].b;
+  return p;
 }
 
-void set_cell_matrix(matrix *m, int i, int j, char color, unsigned char c) {
-  if (color == 'r')
-    m->data[i][j].r = c;
-  else if (color == 'g')
-    m->data[i][j].g = c;
-  else if (color == 'b')
-    m->data[i][j].b = c;
-  else
-    printf("wrong color!\n");
+void set_cell_matrix(matrix *m, int i, int j, pixel p) {
+  m->data[i][j].r = p.r;
+  m->data[i][j].g = p.g;
+  m->data[i][j].b = p.b;
   return;
 }
 

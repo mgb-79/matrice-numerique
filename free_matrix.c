@@ -10,3 +10,5 @@ void free_matrix(matrix *m) {
   free(m->data);
   return;
 }
+
+void free_pixel(pixel *p) { free(p); }

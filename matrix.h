@@ -9,13 +9,13 @@ matrix *create_matrix_blank(int dimension);
 void print_matrix(matrix *m);
 
 // Fill the matrix with a color.
-void fill_matrix(matrix *m, unsigned char r, unsigned char g, unsigned char b);
+void fill_matrix(matrix *m, pixel *p);
 
-// Gets the character located in the i row and j column.
-char get_cell_matrix(matrix *m, int i, int j, char color);
+// Gets the pixel located in the i row and j column.
+pixel *get_cell_matrix(matrix *m, int i, int j);
 
 // Sets the c character in the i row and j column.
-void set_cell_matrix(matrix *m, int i, int j, char color, unsigned char c);
+void set_cell_matrix(matrix *m, int i, int j, pixel p);
 
 // Gets the dimensions of the matrix
 int get_dimension_matrix(matrix *m);

@@ -12,3 +12,11 @@ matrix *new_matrix(int dimension) {
   m->dimension = dimension;
   return m;
 }
+
+pixel *new_pixel() {
+  pixel *p = malloc(sizeof(pixel));
+  p->r = 0;
+  p->g = 0;
+  p->b = 0;
+  return p;
+}

@@ -3,7 +3,7 @@
 #include "struct.h"
 #include <stdio.h>
 
-// Free the matrix.
-void free_matrix(matrix *m);
+// Free the pixel.
+void free_pixel(pixel *p);
 
 #endif

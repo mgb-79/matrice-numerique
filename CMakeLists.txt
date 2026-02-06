@@ -5,5 +5,5 @@ enable_testing()
 
 link_directories(${CMAKE_SOURCE_DIR})
 set(CMAKE_C_FLAGS "-std=c99 -g -Wall")
-add_executable(projet_text main.c matrix.c free_matrix.c alloc.c)
+add_executable(projet_text main.c matrix.c pixel.c ppm.c free_matrix.c alloc.c)
 
