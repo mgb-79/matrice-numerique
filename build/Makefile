@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/maximilien/Projects/matrice-numerique
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maximilien/Projects/matrice-numerique
+CMAKE_BINARY_DIR = /home/maximilien/Projects/matrice-numerique/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,9 +97,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maximilien/Projects/matrice-numerique/CMakeFiles /home/maximilien/Projects/matrice-numerique//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maximilien/Projects/matrice-numerique/build/CMakeFiles /home/maximilien/Projects/matrice-numerique/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maximilien/Projects/matrice-numerique/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/maximilien/Projects/matrice-numerique/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -599,6 +599,54 @@ matrix.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_text.dir/build.make CMakeFiles/projet_text.dir/matrix.c.s
 .PHONY : matrix.c.s
 
+pixel.o: pixel.c.o
+.PHONY : pixel.o
+
+# target to build an object file
+pixel.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_text.dir/build.make CMakeFiles/projet_text.dir/pixel.c.o
+.PHONY : pixel.c.o
+
+pixel.i: pixel.c.i
+.PHONY : pixel.i
+
+# target to preprocess a source file
+pixel.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_text.dir/build.make CMakeFiles/projet_text.dir/pixel.c.i
+.PHONY : pixel.c.i
+
+pixel.s: pixel.c.s
+.PHONY : pixel.s
+
+# target to generate assembly for a file
+pixel.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_text.dir/build.make CMakeFiles/projet_text.dir/pixel.c.s
+.PHONY : pixel.c.s
+
+ppm.o: ppm.c.o
+.PHONY : ppm.o
+
+# target to build an object file
+ppm.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_text.dir/build.make CMakeFiles/projet_text.dir/ppm.c.o
+.PHONY : ppm.c.o
+
+ppm.i: ppm.c.i
+.PHONY : ppm.i
+
+# target to preprocess a source file
+ppm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_text.dir/build.make CMakeFiles/projet_text.dir/ppm.c.i
+.PHONY : ppm.c.i
+
+ppm.s: ppm.c.s
+.PHONY : ppm.s
+
+# target to generate assembly for a file
+ppm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_text.dir/build.make CMakeFiles/projet_text.dir/ppm.c.s
+.PHONY : ppm.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -649,6 +697,12 @@ help:
 	@echo "... matrix.o"
 	@echo "... matrix.i"
 	@echo "... matrix.s"
+	@echo "... pixel.o"
+	@echo "... pixel.i"
+	@echo "... pixel.s"
+	@echo "... ppm.o"
+	@echo "... ppm.i"
+	@echo "... ppm.s"
 .PHONY : help
 
 
