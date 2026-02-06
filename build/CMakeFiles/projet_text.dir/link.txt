@@ -1,1 +1,0 @@
-/usr/bin/cc -std=c99 -g -Wall CMakeFiles/projet_text.dir/main.c.o CMakeFiles/projet_text.dir/matrix.c.o CMakeFiles/projet_text.dir/pixel.c.o CMakeFiles/projet_text.dir/ppm.c.o CMakeFiles/projet_text.dir/free_matrix.c.o CMakeFiles/projet_text.dir/alloc.c.o -o projet_text   -L/home/maximilien/Projects/matrice-numerique 
