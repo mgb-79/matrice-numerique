@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void change_color_pixel(pixel *p, char color, char value) {
+void change_color_pixel(pixel *p, char color, int value) {
   if (color == 'r') {
     p->r = value;
   } else if (color == 'g') {

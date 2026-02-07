@@ -43,10 +43,10 @@ pixel *get_cell_matrix(matrix *m, int i, int j) {
   return p;
 }
 
-void set_cell_matrix(matrix *m, int i, int j, pixel p) {
-  m->data[i][j].r = p.r;
-  m->data[i][j].g = p.g;
-  m->data[i][j].b = p.b;
+void set_cell_matrix(matrix *m, int i, int j, pixel *p) {
+  m->data[i][j].r = p->r;
+  m->data[i][j].g = p->g;
+  m->data[i][j].b = p->b;
   return;
 }
 

@@ -11,8 +11,8 @@ void save_file(matrix *m, const char *file_name) {
   fprintf(f, "255\n");
   for (int i = 0; i < get_dimension_matrix(m); i++) {
     for (int j = 0; j < get_dimension_matrix(m); j++) {
-      fprintf(f, "%3d %3d %3d   ", m->data[i][j].r, m->data[i][j].g,
-              m->data[i][j].b);
+      fprintf(f, "%d %d %d   ", (int)m->data[i][j].r, (int)m->data[i][j].g,
+              (int)m->data[i][j].b);
     }
     fprintf(f, "\n");
   }

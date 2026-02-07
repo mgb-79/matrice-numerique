@@ -17,7 +17,6 @@ int main(int argc, char **argv) {
       add_text(&window, "Welcome to this PPM Image Manager !", 1280, 720);
 
   QPushButton *button = add_button(&window, "Create your own image", 200, 200);
-
   window.show();
 
   return app.exec();
