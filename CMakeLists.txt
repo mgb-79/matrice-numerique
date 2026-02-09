@@ -4,7 +4,7 @@ include(CTest)
 enable_testing()
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
-
+set(CMAKE_AUTOMOC ON)
 link_directories(${CMAKE_SOURCE_DIR})
 
 set(CMAKE_C_FLAGS  "-std=c99 -g -Wall")
@@ -14,7 +14,7 @@ set(COMMON_C_SOURCES
 )
 
 set(GUI_CPP_SOURCES
-    gui.cpp
+    classgui.cpp
 )
 
 add_executable(project_text

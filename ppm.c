@@ -18,3 +18,10 @@ void save_file(matrix *m, const char *file_name) {
   }
   fclose(f);
 }
+
+matrix *load_file(FILE *f, const char *file_name, int dimension) {
+  matrix *m = new_matrix(dimension);
+  f = fopen(file_name, "r");
+
+  return m;
+}

@@ -35,6 +35,7 @@ void fill_matrix(matrix *m, pixel *p) {
     }
   }
 }
+
 pixel *get_cell_matrix(matrix *m, int i, int j) {
   pixel *p = new_pixel();
   p->r = m->data[i][j].r;
